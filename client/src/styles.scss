@@ -1,0 +1,66 @@
+.loginbg{
+  background-image: linear-gradient(
+  55deg,
+  hsl(175deg 98% 61%) 0%,
+  hsl(168deg 98% 62%) 15%,
+  hsl(160deg 98% 63%) 34%,
+  hsl(151deg 99% 63%) 59%,
+  hsl(139deg 99% 64%) 100%
+);
+}
+
+.loginheight {
+  height: calc(100vh - 63px);
+}
+
+.logincardheight {
+  height: 90%;
+}
+
+.bgmain {
+  background-color: var(--background-main);
+}
+
+.bgcolor {
+  background-color: var(--background-color-light);
+}
+
+.bgcolor2 {
+  background-color: var(--background-color-dark);
+}
+
+.bgeditProfile {
+  background-color: var(--edit-color); 
+}
+
+.bgEditInput {
+  background-color: var(--edit-input-color)
+}
+
+.profile{
+  .options {
+    display : none;
+    background-color: var(--background-color-light);
+    border-radius: 10px;
+    margin: 4px;
+    position: relative;
+    }
+
+  span {
+    padding: 8px 36px;
+    font-weight: semi-bold;
+    cursor: pointer;
+
+    &:hover {      
+      background-color: var(--background-color-dark);
+    }
+  }
+  &:hover {
+    .options {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 52px;
+    }
+  }
+}
